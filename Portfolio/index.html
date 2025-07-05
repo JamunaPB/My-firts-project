@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="logo.png" class="logo">
+        <ul sidemenu>
+          <li><a href="#header">HOME</a></li>
+          <li><a href="#ABOUT">ABOUT</a></li>
+          <li><a href="#services">SERVICE</a></li>
+          <li><a href="#portfolio">PORTFOLIP</a></li>
+          <li><a href="#Contact">CONTRACT</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="headertext">
+        <p>UI/UX Designer</p>
+        <h1>Hi, I'm <span>Kelvin</span><br>from India</h1>
+      </div>
+    </div>
+  </div>
+  <div id="ABOUT">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="user1.png">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-ttl"> About me </h1>
+          <p1> A "About Me" section in a student portfolio should provide a concise overview of the student's
+            background, skills, and interests, highlighting what makes them unique and what they hope to achieve. It
+            should be personalized, showcasing their passions, and what they're good at, while also briefly mentioning
+            relevant experiences like academics, work, or extracurriculars. </p1>
+          <div class="tab-ttls">
+            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="Skills">
+            <ul>
+              <li><span>UI/UX</span><br>Design web/app interface</li>
+              <li><span>App development</span><br>Design web/app interface</li>
+              <li><span>Web development</span><br>Design web/app interface</li>
+            </ul>
+          </div>
+          <div class="tab-contents active-tab" id="Experiences">
+            <ul>
+              <li><span>2019-2021</span><br>Intern at cognizant</li>
+              <li><span>2021-2023</span><br>Senior-Asssociate</li>
+              <li><span>2023-2025</span><br>Team lead </li>
+            </ul>
+          </div>
+          <div class="tab-contents active-tab" id="Education">
+            <ul>
+              <li><span>2021</span><br>Graduated in SIT, Tumkur</li>
+              <li><span>2016</span><br>PUC in SVC, Tumkur</li>
+              <li><span>2014</span><br>SSLC IN MJC, Tumkur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!----------------Service----------->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="service-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis earum ex dignissimos accusamus itaque esse
+            ullam aliquid nisi illum ipsum unde doloribus animi fugiat, sint quisquam, molestias laudantium cumque id?
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>UX/UI Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis earum ex dignissimos accusamus itaque esse
+            ullam aliquid nisi illum ipsum unde doloribus animi fugiat, sint quisquam, molestias laudantium cumque id?
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis earum ex dignissimos accusamus itaque esse
+            ullam aliquid nisi illum ipsum unde doloribus animi fugiat, sint quisquam, molestias laudantium cumque id?
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!----------------Portfolio----------->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.png">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil cumque iure repellendus perspiciatis aut
+              quos id beatae praesentium suscipit? Tempora.</P>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-2.png">
+          <div class="layer">
+            <h3>Music Media App</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil cumque iure repellendus perspiciatis aut
+              quos id beatae praesentium suscipit? Tempora.</P>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="work-3.png">
+          <div class="layer">
+            <h3>Online shopping App</h3>
+            <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil cumque iure repellendus perspiciatis aut
+              quos id beatae praesentium suscipit? Tempora.</P>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!---------Contact----------->
+  <div id="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>contact@exaple.com</p>
+          <p><i class="fa-solid fa-phone"></i>9933668800</p>
+
+          <div class="social-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"> </span>
+        </div>
+      </div>
+      <div>
+        <div class="copyright">
+          <p>
+          <p>Copyright &copy; 2024 My Website. All rights reserved.</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemen.style.right = "0";
+    }
+    function closemenu(){
+      sidemen.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby-5QST9O91-3r2wpcjZCkZwTxXobzkcPKuQEr0mwgOotQqfDGi-sO8HH6q9qRJWyvC/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent sucessufully"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
